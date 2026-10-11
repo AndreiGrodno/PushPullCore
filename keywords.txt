@@ -1,0 +1,66 @@
+###########################################################
+# Syntax coloring for PushPullCore
+# Формат: ИМЯ<TAB>ТИП
+# Типы: KEYWORD1 (тип), KEYWORD2 (функция), KEYWORD3 (переменная), LITERAL1 (константа)
+###########################################################
+
+# --- Типы ---
+PushPullCore	KEYWORD1
+PushPullConfig	KEYWORD1
+SetpointSource	KEYWORD1
+SystemState	KEYWORD1
+
+# --- Инициализация ---
+pushpull_init	KEYWORD2
+pushpull_start	KEYWORD2
+pushpull_get_config	KEYWORD2
+
+# --- Уставки ---
+pushpull_set_voltage	KEYWORD2
+pushpull_set_current_limit	KEYWORD2
+pushpull_set_pid	KEYWORD2
+pushpull_set_frequency	KEYWORD2
+pushpull_set_dead_time_ns	KEYWORD2
+pushpull_set_source	KEYWORD2
+pushpull_set_soft_start_duty	KEYWORD2
+
+# --- Чтение ---
+pushpull_get_voltage_setpoint	KEYWORD2
+pushpull_get_current_limit	KEYWORD2
+pushpull_get_voltage_measured	KEYWORD2
+pushpull_get_current_measured	KEYWORD2
+pushpull_get_pid_kp	KEYWORD2
+pushpull_get_pid_ki	KEYWORD2
+pushpull_get_frequency	KEYWORD2
+pushpull_get_dead_time_ns	KEYWORD2
+pushpull_get_soft_start_duty	KEYWORD2
+pushpull_get_source	KEYWORD2
+pushpull_get_state	KEYWORD2
+pushpull_is_running	KEYWORD2
+pushpull_is_faulted	KEYWORD2
+
+# --- Пресет (NVS) ---
+pushpull_save_preset	KEYWORD2
+pushpull_load_preset	KEYWORD2
+pushpull_reset_to_defaults	KEYWORD2
+
+# --- Утилиты ---
+pushpull_state_str	KEYWORD2
+pushpull_source_str	KEYWORD2
+pushpull_blink_led	KEYWORD2
+
+# --- Надстройки ---
+pushpull_serial_iface_init	KEYWORD2
+pushpull_button_iface_init	KEYWORD2
+
+# --- Источник уставок ---
+SRC_FIXED	LITERAL1
+SRC_POTS	LITERAL1
+SRC_REMOTE	LITERAL1
+
+# --- Состояния системы ---
+STATE_INIT	LITERAL1
+STATE_SOFT_STARTING	LITERAL1
+STATE_RUNNING	LITERAL1
+STATE_FAULT_ACTIVE	LITERAL1
+STATE_RECOVERING	LITERAL1
